@@ -15,6 +15,9 @@ public class Task {
 
     }
 
+    public Task() {
+    }
+
     public int getId() {
         return id;
     }
@@ -39,6 +42,14 @@ public class Task {
         this.title = title;
     }
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", desc='" + desc + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }
 
 
